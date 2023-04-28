@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+        <h1>Student Enrollment Form</h1>
+
+        <header>
+        <div class="left-section">
+            <form action="" id="my_form">
+                <div class="short-div">
+                   <label for="fname">Name :</label>
+                   <input type="text" id="fname" name="fname" required>
+                </div>
+                <div class="short-div">
+                    <label for="email">Email :</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                    
+                <div class="short-div">
+                    <label for="website">Website :</label>
+                    <input type="text" id="website" required>
+                </div>
+    
+                <div class="short-div">
+                    <label for="image">Student image link :</label>
+                    <input type="link" id="image" required>
+                </div>
+    
+                <div class="short-div">
+                    <label for="Mail">Gender :</label>
+                    <div class="showgender">
+                        <input type="radio" id="Male" name="gender" value="Male">
+                        <label for="Femail">Male</label><br>
+                        <input type="radio" id="Female" name="gender" value="Female">
+                        <label for="Femail">Female</label><br>
+                    </div>
+                </div>
+     
+    
+                <div class="short-div">
+                    <label for="lname">Skills :</label><br>
+                    <div class="skills">
+                        <input type="checkbox" id="Java" name="skills" value="Java" class="getvalue">
+                        <label for="Java">Java</label><br>
+                        <input type="checkbox" id="Python" name="skills" value="Python" class="getvalue" checked>
+                        <label for="Python">Python</label><br>
+                        <input type="checkbox" id="JavaScript" name="skills" value="JavaScript" class="getvalue" checked>
+                        <label for="JavaScript">JavaScript</label>
+                    </div>
+                </div>
+
+                <div class="btns">
+                    <input class="btn" type="submit" value="Enroll Student">
+                    <input class="btn" type="reset" value="Clear">
+                </div>
+            </form>
+        </div>
+        
+
+        <div class="right-section">
+            <h3>Enrolled Students</h3>
+            <div class="mytable">
+                <table  border="3">
+                    <thead>
+                    <tr>
+                      <th>Description</th>
+                      <th>Image</th>
+                    </tr>
+                </thead>
+
+                <tbody id="users_table">
+                    <tr>
+                        <td>
+                        
+                      </td>
+                      
+                      </tr> 
+                </tbody>
+                   
+                  </table>
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>

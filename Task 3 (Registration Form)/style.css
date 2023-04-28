@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    background-color: rgb(77, 42, 104);
+}
+h1{
+    margin-top: 30px;
+    text-align: center;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+}
+.left-section{
+    margin-top: 30px;
+    color: black;
+    /* border: 2px solid white; */
+    width: 50%;`
+    /* display: block; */
+}
+.short-div{
+    margin: 10px 20px;
+    /* border: 2px solid white; */
+   
+}
+.short-div #fname {
+    margin: 0px 50px;
+    padding: 5px;
+    width: 20vw;
+    color: black;
+    border-radius: 19px;
+    background-color: rgb(151, 147, 94);
+}
+.short-div #email {
+    margin: 0px 53px;
+    padding: 5px;
+    color: black;
+    width: 20vw;
+    border-radius: 19px;
+    background-color: rgb(151, 147, 94);
+}
+.short-div #website{
+    margin: 0px 34px;
+    padding: 5px;
+    color: black;
+    width: 20vw;
+    border-radius: 19px;
+    background-color: rgb(151, 147, 94);
+}
+.short-div #image{
+    margin: 0px 19px;
+    padding: 5px;
+    color: black;
+    width: 20vw;
+    border-radius: 19px;
+    background-color: rgb(151, 147, 94);
+}
+.short-div .showgender{
+    position: relative;
+    left: 16%;
+}
+.short-div .skills {
+    position: relative;
+    left: 16%;
+}
+.btns{
+    margin: 0 20px;
+}
+.btns .btn{
+    /* color: black; */
+    margin: 12px;
+    padding: 10px 15px;
+    background-color: rgb(90, 86, 86);
+    outline: none;
+    cursor: pointer;
+    border: 2px solid rgb(90, 86, 86);;
+    color: white;
+    /* box-shadow: 0 0px 30px rgb(224, 224, 238); */
+}
+.right-section{
+    margin: 30px 30px;
+}
+.right-section .mytable{
+    margin-top: 30px;
+    /* border: 2px solid white; */
+}
+img{
+    width: 10vw;
+    height: 15vh;
+}
+/* Responsive */
+@media (max-width: 700px) {
+    header {
+        /* width: 100%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .left-section{
+        width: 90vw;
+    }
+    .short-div #fname{
+        width: 60%;
+        margin: 0px 30px;
+    }
+    .short-div #email{
+        width: 60%;
+        margin: 0px 30px;
+    }
+    .short-div #website{
+        width: 60%;
+        margin: 0px 13px;
+    }
+    .short-div #image{
+        width: 60%;
+        margin: 0px 13px;
+    }
+    img{
+        width: 20vw;
+        height: 15vh;
+    }
+  }

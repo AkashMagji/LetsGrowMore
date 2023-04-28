@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    background-color: rgb(25, 10, 10);
+}
+h1{
+    text-align: center;
+    color: rgb(185, 22, 22);
+    margin-top: 20px;
+}
+.container{
+    display: flex;
+    /* border: 2px solid white; */
+    /* height: 50vh; */
+    /* width: 50%; */
+    width: 100%;
+    margin: 30px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.todo-list{
+    width: 30%;
+    /* border: 1px solid red; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    padding: 20px;
+    box-shadow: 0 0px 30px rgb(255, 0, 0);
+    border-radius: 19px;
+}
+.list-head input{
+    width: 75vw;
+    padding: 10px 10px;
+    color: black;
+    font-size: 16px;
+    border-radius: 14px;
+
+}
+.list-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.list-head #add_btn{
+    color: black;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 14px;
+}
+
+#to-do-box{
+    margin-top: 20px;
+    list-style: none;
+}
+#to-do-box li{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    box-shadow: 0 0px 5px rgb(224, 224, 238);
+    padding: 10px;
+    border-radius: 14px;    
+}
+#delete{
+    font-size: 20px;
+    cursor: pointer;
+}
+.done{
+    text-decoration: line-through;
+    color: black;
+    
+}
+/* Responsive */
+@media (max-width: 480px) {
+    .todo-list {
+        width: 100%;
+    }
+  }
